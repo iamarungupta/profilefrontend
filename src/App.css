@@ -1,0 +1,112 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 1200px;
+  background-color: bisque;
+  text-align: center;
+}
+.top_header--box1 {
+background-color: aqua;
+}
+
+/*profile section css*/
+.profile_section{
+  background-color: blue;
+  height: 10vh;
+}
+.profile_section--box1{
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(75, 12, 183);
+  
+}
+
+.profile_section--box1--logo{
+  height: inherit;
+  background-color: aquamarine;
+  flex-grow: 1;
+  
+}
+.profile_section--box1--email{
+  background-color: rgb(77, 26, 179);
+  flex-grow: 1;
+  height: inherit;
+}
+.profile_section--box1--follower{
+  background-color: rgb(21, 24, 23);
+  flex-grow: 1;
+  height: inherit;
+}
+
+/* About section css*/
+.about_section{
+  background-color: rgb(162, 217, 60);
+  height: 10vh;
+  display: flex;
+  flex-grow: 1;
+}
+.about_section--box1{
+  display: flex;
+  flex-direction:column;
+}
+.about_section--box2{
+  display: flex;
+  flex-direction: row;
+  height: 10px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.about_section--box1--content{
+  border: 2px solid brown;
+  flex-grow: 1;
+}
+
+
+/* Cipher Map section css*/
+.cipher_map_section{
+  height: 10vh;
+  background-color: rgb(191, 195, 73);
+  flex-grow: 1;
+}
+
+
+
+/* Web Links section css*/
+.on_web_section{
+  height: 10vh;
+  display: flex;
+  background-color: rgb(230, 217, 217);
+  justify-content: space-around;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+
+/* Professional section css*/
+.prof_info_section{
+  height: 10vh;
+  background-color: rgb(161, 109, 109);
+  flex-grow: 1;
+}
+
+/* Password Section Css*/
+.password_section{
+  height: 10vh;
+  background-color: rgb(24, 168, 118);
+  flex-grow: 1;
+}
+
+/* Interest section css*/
+.interest_section{
+  height: 10vh;
+  background-color: rgb(65, 42, 165);
+  
+  flex-grow: 1;
+}
+

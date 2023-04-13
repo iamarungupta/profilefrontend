@@ -3,9 +3,8 @@ import './App.css';
 import Profile from './components/profile';
 import Topheader from './components/topheader'; 
 import About from './components/About';
-
-import React from 'react';
 import CipherMap from './components/CipherMap';
+import React from 'react';
 import WebLinks from './components/WebLinks';
 import ProfesionalInfo from './components/ProfesionalInfo';
 import Password from './components/Password';
@@ -28,10 +27,12 @@ function App() {
     <div>
         <div ><Profile/></div>
        <div className='border-2'><About/></div>
+       <div className='border-2'><CipherMap/></div>
        <div className='border-2'><WebLinks/></div>
        <div className='border-2'><ProfesionalInfo/></div>
        <div className="border-2"> <Password/></div>
        <div > <Interest/> </div>
+       
     </div>
   );
 }

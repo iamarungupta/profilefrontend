@@ -5,23 +5,19 @@ const About = ({props}) => {
   const {id}=useParams();
   const [edit,setEdit]=useState(false);
   const [about,setAbout]=useState("");
-  const fetchData=async()=>{
-    const res=await fetch("http://localhost:4000/profile/"+id);
-    const json=await res.json();
-    // console.log(json);
-    setData(json)
-  }
+
   const editAbout=async()=>{
     // console.log(about);
     try {
-      const res=fetch("http://localhost:4000/about/"+id,{
+      const res=await fetch("http://localhost:4000/about/"+id,{
       method:"PUT",
       body:JSON.stringify({about}),
       headers: {
         "Content-Type": "application/json",
       },
     })
-    fetchData();
+    const json=await res.json();
+    setData(json);
     
     } catch (error) {
       console.log(error.message)

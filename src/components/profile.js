@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Profile = () => {
+const Profile = ({props}) => {
+  console.log(props);
   return (
     <div>
       <div
@@ -8,11 +9,11 @@ const Profile = () => {
     <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://tailwindcss.com/img/erin-lindford.jpg" alt="Woman's Face"/>
     <div class=" flex justify-between   w-full text-center space-y-2 sm:text-left">
         <div class="space-y-0.5">
-            <p class="text-lg text-black  font-semibold">
-                Hello
+            <p class="text-lg text-black  font-semibold capitalize">
+                {"Hello "+props.firstName}
             </p>
             <p class="text-slate-500 font-medium">
-                Abc1223@gmail.com
+                {props.email}
             </p>
         </div>
         <div class="ml-10">

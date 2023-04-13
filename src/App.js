@@ -1,19 +1,15 @@
 
 import './App.css';
-import Profile from './components/profile';
+import Home from './components/Home'
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
 import Topheader from './components/topheader'; 
-import About from './components/About';
-import CipherMap from './components/CipherMap';
-import React from 'react';
-import WebLinks from './components/WebLinks';
-import ProfesionalInfo from './components/ProfesionalInfo';
-import Password from './components/Password';
-import Interest from './components/Interest';
+import React,{useState} from 'react';
+import {Routes,Route} from 'react-router-dom'
 
 function App() {
   return (
     // <div className="App">
-
     //   <div className="top--header"> <Topheader/> </div>
     //   <div className="profile_section"><Profile/></div>
     //   <div className="about_section"><About/></div>
@@ -22,17 +18,13 @@ function App() {
     //   <div className="prof_info_section"><ProfesionalInfo/> </div>
     //   <div className="password_section"> <Password/></div>
     //   <div className="interest_section"> <Interest/> </div>
-
     // </div>
     <div>
-        <div ><Profile/></div>
-       <div className='border-2'><About/></div>
-       <div className='border-2'><CipherMap/></div>
-       <div className='border-2'><WebLinks/></div>
-       <div className='border-2'><ProfesionalInfo/></div>
-       <div className="border-2"> <Password/></div>
-       <div > <Interest/> </div>
-       
+    <Routes>
+      <Route path='/' element={<SignIn />}></Route>
+      <Route path='/Signup' element={<SignUp/>}></Route>
+      <Route path='/profile/:id' element={<Home/>}></Route>
+    </Routes>
     </div>
   );
 }

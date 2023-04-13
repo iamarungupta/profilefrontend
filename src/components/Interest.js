@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Interest = () => {
+  
+
   return (
-    <div className='interest_section--box1'>
-      interest_section--box1
-    </div>
+    
+<div></div>
+      
+    
+
   )
 }
 

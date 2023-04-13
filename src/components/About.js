@@ -23,7 +23,7 @@ const About = () => {
 <div className="flex w-full   justify-between items-end p-2">
 <label for="message" class="block mb-2 text-md font-bold text-gray-900">ABOUT ME</label>
 <button class="inline-flex text-white bg-[#f3912e] border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded text-lg" onClick={()=>{
-  if(edit==true){
+  if(edit===true){
       editAbout();
   }
   setEdit(!edit)

@@ -26,9 +26,12 @@ function App() {
 
     // </div>
     <div>
+        <div ><Profile/></div>
        <div className='border-2'><About/></div>
        <div className='border-2'><WebLinks/></div>
        <div className='border-2'><ProfesionalInfo/></div>
+       <div className="border-2"> <Password/></div>
+       <div > <Interest/> </div>
     </div>
   );
 }
